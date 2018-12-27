@@ -1,6 +1,6 @@
 {
   "name": "weapp-pixi-tools",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "weapp-pixi utils tools",
   "main": "./bin/index.js",
   "files": [
