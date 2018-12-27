@@ -62,8 +62,6 @@ if(resFolder === null || typeof resFolder === 'undefined') {
   process.exit(-1);
 }
 
-console.log(resFolder);
-
 let outputFileName = path.basename(resFolder) + '.map.json';
 if(program.output) {
   outputFileName = path.basename(program.output, path.extname(program.output)) + '.map.json';
