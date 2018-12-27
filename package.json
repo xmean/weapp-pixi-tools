@@ -1,0 +1,49 @@
+{
+  "name": "weapp-pixi-tools",
+  "version": "0.0.1",
+  "description": "weapp-pixi utils tools",
+  "main": "./bin/wpx-tools.js",
+  "files": [
+    "bin/",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "lint": "eslint src --color",
+    "build": "npm run lint && BABEL_ENV=production babel src --out-dir bin --minified",
+    "test:resmap": "cd test && wpx resmap ./assets && cd ..",
+    "test": "npm run test:resmap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xmean/weapp-pixi-tools.git"
+  },
+  "keywords": [
+    "微信小游戏",
+    "pixi.js",
+    "assets",
+    "工具"
+  ],
+  "bin": {
+    "wpx": "./bin/wpx-tools.js"
+  },
+  "author": "xmean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xmean/weapp-pixi-tools/issues"
+  },
+  "homepage": "https://github.com/xmean/weapp-pixi-tools#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0",
+    "md5": "^2.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-minify": "^0.5.0",
+    "eslint": "^5.11.1"
+  }
+}

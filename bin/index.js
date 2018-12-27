@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+"use strict";var _commander=require("commander"),program=new _commander.Command;program.command("resmap [folder]","Generate asset map file for a given resource folder").command("command","list of supported commands",{isDefault:!0}).parse(process.argv);
