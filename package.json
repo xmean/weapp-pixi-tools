@@ -1,6 +1,6 @@
 {
   "name": "weapp-pixi-tools",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "weapp-pixi utils tools",
   "main": "./bin/index.js",
   "files": [
@@ -14,7 +14,7 @@
     "test:resmap": "cd test && wpx resmap ./assets && cd ..",
     "test": "npm run test:resmap"
   },
-  "eslintIgnore" : [
+  "eslintIgnore": [
     "node_modules/*"
   ],
   "repository": {
