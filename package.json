@@ -2,7 +2,7 @@
   "name": "weapp-pixi-tools",
   "version": "0.0.2",
   "description": "weapp-pixi utils tools",
-  "main": "./bin/wpx-tools.js",
+  "main": "./bin/index.js",
   "files": [
     "bin/",
     "package.json",
@@ -14,6 +14,9 @@
     "test:resmap": "cd test && wpx resmap ./assets && cd ..",
     "test": "npm run test:resmap"
   },
+  "eslintIgnore" : [
+    "node_modules/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xmean/weapp-pixi-tools.git"
@@ -25,7 +28,7 @@
     "工具"
   ],
   "bin": {
-    "wpx": "./bin/wpx-tools.js"
+    "wpx": "./bin/index.js"
   },
   "author": "xmean",
   "license": "ISC",
